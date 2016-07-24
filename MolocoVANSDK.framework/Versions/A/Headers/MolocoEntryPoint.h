@@ -16,6 +16,7 @@
 }
 
 + (id)sharedInstance;
++ (void)setAppName:(NSString *)appName;
 + (void)sendEvent:(NSString *)eventName dataMap:(NSDictionary *)dataMap delegate:(id<MolocoApiCallback>)delegate;
 
 @property (nonatomic, weak) id<MolocoApiCallback> delegate;
